@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://codex.ieee.lk
+
+# Sitemaps
+Sitemap: https://codex.ieee.lk/sitemap.xml
