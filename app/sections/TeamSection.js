@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react';
-import { Linkedin, User, Users } from 'lucide-react';
+import { User, Users } from 'lucide-react';
 import ParallaxEffect from '@/app/components/ParallaxEffect';
 import GlassCard from '@/app/components/GlassCard';
 
@@ -38,72 +38,74 @@ export default function TeamSection() {
 
   // Team data with images and LinkedIn - arranged in specific order
   const team = [
-    { 
-      name: "Dilini Ekanayaka", 
-      position: "Chair, Educational Activities Committee",
-      image: "/images/team/Dilini Ekanayaka.png",
+    {
+      name: "Prof. Sidath Liyanage",
+      position: "Chair, Educational Activities Committee, IEEE Sri Lanka Section",
+      image: "/images/team/sidath.png?v=2",
       social: {
-        linkedin: "https://linkedin.com/in/dilini-ekanayaka"
+        linkedin: null
       },
-      bio: "Leading educational initiatives and community building efforts."
+      bio: "Leading educational initiatives and community building efforts across IEEE Sri Lanka."
     },
-    { 
-      name: "Thamindu Nirmal", 
+    {
+      name: "Dineth Palliyaguru",
       position: "Project Chair",
-      image: "/images/team/Thamindu Nirmal.jpg",
-      social: {
-        linkedin: "https://linkedin.com/in/thamindu-nirmal"
-      },
-      bio: "Leading IEEE CodeX initiatives to build a thriving tech community in Sri Lanka."
-    },
-    { 
-      name: "Nethmi Fernando", 
-      position: "Secretary",
-      image: "/images/team/Nethmi Fernando.jpg",
-      social: {
-        linkedin: "https://www.linkedin.com/in/nethmilakshimafernando/"
-      },
-      bio: "Coordinating all administrative aspects and ensuring smooth operations of our initiatives."
-    },
-    { 
-      name: "Mahima Bashitha", 
-      position: "Vice Chair - Program and Delivery",
-      image: "/images/team/Mahima Bhashitha.jpg",
-      social: {
-        linkedin: "http://linkedin.com/in/mahima-bhashitha-558738288"
-      },
-      bio: "Overseeing all programming events and competitions for maximum participant value."
-    },
-    { 
-      name: "Dineth Palliyaguru", 
-      position: "Vice Chair - Public Visibility",
       image: "/images/team/DinethPalliyaguru.jpg",
       social: {
         linkedin: "https://linkedin.com/in/dineth-palliyaguru"
       },
+      bio: "Leading IEEE CodeX initiatives to build a thriving tech community in Sri Lanka."
+    },
+    {
+      name: "Sasanka Wakista",
+      position: "Secretary",
+      image: "/images/team/Sasanka Wakista.jpeg",
+      social: {
+        linkedin: "https://www.linkedin.com/in/sasanka-wakista-4bb248206"
+      },
+      bio: "Coordinating all administrative aspects and ensuring smooth operations of our initiatives."
+    },
+    {
+      name: "Thamalu D Bambaravanage",
+      position: "Vice Chair - Public Visibility",
+      image: "/images/team/Thamalu Bambaravanage.jpg",
+      social: {
+        linkedin: null
+      },
       bio: "Managing our public presence and outreach strategies to promote competitive programming."
     },
-    { 
-      name: "Ishara Dias", 
-      position: "Vice Chair - Finance and Partnership",
-      image: "/images/team/Ishara_Dias.jpg",
+    {
+      name: "Kulakshi Thathsarani",
+      position: "Vice Chair - Finance",
+      image: "/images/team/Kulakshi Thathsarani.jpg",
       social: {
-        linkedin: "http://www.linkedin.com/in/ishara-dias-49697b24a"
+        linkedin: null
       },
       bio: "Managing financial resources and developing strategic partnerships with industry leaders."
+    },
+    {
+      name: "Likitha Chathubhashini",
+      position: "Vice Chair - Program",
+      image: "/images/team/Likitha Chathubhashini.jpeg",
+      social: {
+        linkedin: null
+      },
+      bio: "Overseeing all programming events and competitions for maximum participant value."
     },
   ];
 
   // Coordinators with their corresponding images and LinkedIn
   const coordinators = [
-    { name: "Hiruna Gallage", image: "/images/team/Hiruna_Gallage.jpg", linkedin: "https://www.linkedin.com/in/hirunaofficial/" },
-    { name: "Chamika Pathirana", image: "/images/team/Chamika Lakshan.png", linkedin: "https://www.linkedin.com/in/chamika-lakshan/" },
-    { name: "Adeepa Shamal", image: "/images/team/adeepa wickramasinghe.jpg", linkedin: "https://www.linkedin.com/in/adeepa-shamal-5420a8282" },
-    { name: "Yashodha De Silva", image: "/images/team/Yashodha De Silva.jpg", linkedin: "http://www.linkedin.com/in/yashodha-de-silva-b77581371" },
-    { name: "Sasanka Wakista", image: "/images/team/SasankaWakista.jpg", linkedin: "https://www.linkedin.com/in/sasanka-wakista-4bb248206" },
-    { name: "Madhawa Aloka", image: "/images/team/Madhawa_aloka.jpg", linkedin: "https://www.linkedin.com/in/madhawa-aloka-707940271/" },
-    { name: "Menura Andrahennedi", image: "/images/team/Menura Andrahennedi (2).jpg", linkedin: "https://www.linkedin.com/in/menura-andrahennedi-914a87280" },
-    { name: "Senaya Bandara", image: "/images/team/Senaya Bandara.jpg", linkedin: "https://www.linkedin.com/in/senaya-bandara-04aa75251/" }
+    { name: "Yasath Amasara", image: "/images/team/Yasath Amasara.jpg", linkedin: null },
+    { name: "Sanindu Thalwatte", image: "/images/team/Sanindu Thalwatte.jpg", linkedin: null },
+    { name: "Chavini Wijerathna", image: "/images/team/Chavini Wijerathna.jpeg", linkedin: null },
+    { name: "Nimesha Kavindu", image: "/images/team/Nimesha Kavindu.jpg", linkedin: null },
+    { name: "Kusal Nirukshan", image: "/images/team/Kusal Nirukshan.jpg", linkedin: null },
+    { name: "Sethini Thennakoon", image: "/images/team/Sethini Thennakoon.jpg", linkedin: null },
+    { name: "Minindu Abeywardena", image: "/images/team/Minindu Abeywardena.jpeg", linkedin: null },
+    { name: "Chamoth Sandeepa", image: "/images/team/Chamoth Sandeepa.jpeg", linkedin: null },
+    { name: "Janidu Janadara", image: "/images/team/Janidu Janadara.png", linkedin: null },
+    { name: "Madhawa Aloka", image: "/images/team/Madhawa Aloka.jpg", linkedin: "https://www.linkedin.com/in/madhawa-aloka-707940271/" }
   ];
 
   // Function to get initials from name
@@ -152,13 +154,15 @@ export default function TeamSection() {
       );
     }
 
+    const isSidath = member.name === "Prof. Sidath Liyanage";
+
     return (
-      <div className={`${sizeClasses[size]} rounded-full overflow-hidden mx-auto ${size === 'large' ? 'mb-6 blue-glow-subtle' : 'mb-3'} bg-gradient-to-br ${getGradient(index)} transition-all duration-300 hover:scale-105 shadow-lg`}>
+      <div className={`${sizeClasses[size]} rounded-full overflow-hidden mx-auto ${size === 'large' ? 'mb-6 blue-glow-subtle' : 'mb-3'} ${isSidath ? 'bg-transparent' : `bg-gradient-to-br ${getGradient(index)}`} transition-all duration-300 hover:scale-105 shadow-lg`}>
         <img
           src={member.image}
           alt={member.name}
-          className="w-full h-full object-cover object-center transition-transform duration-300"
-          style={{ objectPosition: 'center 30%' }}
+          className="w-full h-full object-cover transition-transform duration-300"
+          style={{ objectPosition: isSidath ? 'center' : 'center 30%' }}
           onError={() => handleImageError(member.name)}
           loading="lazy"
         />
@@ -218,12 +222,13 @@ export default function TeamSection() {
                       <div className="absolute top-0 right-0 w-32 h-32 bg-blue-600 rounded-full filter blur-3xl opacity-10"></div>
                       <MemberAvatar member={member} index={index} size="large" />
                       <h3 className="text-xl font-bold text-center mb-2 text-white">{member.name}</h3>
-                      <p className="text-blue-300 text-center text-sm mb-4">{member.position}</p>
-                      <div className="flex justify-center">
+                      <p className="text-blue-300 text-center text-sm mb-0">{member.position}</p>
+                      {/* LinkedIn buttons - commented out until URLs are collected
+                      <div className="flex justify-center mt-4">
                         {member.social.linkedin && (
-                          <a 
-                            href={member.social.linkedin} 
-                            target="_blank" 
+                          <a
+                            href={member.social.linkedin}
+                            target="_blank"
                             rel="noopener noreferrer"
                             className="group p-3 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 rounded-full text-white transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/50 border border-blue-400/20"
                             aria-label={`${member.name}'s LinkedIn profile`}
@@ -232,6 +237,7 @@ export default function TeamSection() {
                           </a>
                         )}
                       </div>
+                      */}
                     </div>
                   </GlassCard>
                 </ParallaxEffect>
@@ -261,12 +267,13 @@ export default function TeamSection() {
                       <div className="absolute top-0 right-0 w-32 h-32 bg-blue-600 rounded-full filter blur-3xl opacity-10"></div>
                       <MemberAvatar member={member} index={index + 2} size="large" />
                       <h3 className="text-xl font-bold text-center mb-2 text-white">{member.name}</h3>
-                      <p className="text-blue-300 text-center text-sm mb-4">{member.position}</p>
-                      <div className="flex justify-center">
+                      <p className="text-blue-300 text-center text-sm mb-0">{member.position}</p>
+                      {/* LinkedIn buttons - commented out until URLs are collected
+                      <div className="flex justify-center mt-4">
                         {member.social.linkedin && (
-                          <a 
-                            href={member.social.linkedin} 
-                            target="_blank" 
+                          <a
+                            href={member.social.linkedin}
+                            target="_blank"
                             rel="noopener noreferrer"
                             className="group p-3 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 rounded-full text-white transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/50 border border-blue-400/20"
                             aria-label={`${member.name}'s LinkedIn profile`}
@@ -275,6 +282,7 @@ export default function TeamSection() {
                           </a>
                         )}
                       </div>
+                      */}
                     </div>
                   </GlassCard>
                 </ParallaxEffect>
@@ -288,7 +296,7 @@ export default function TeamSection() {
           <GlassCard className="p-8 rounded-xl">
             <h3 className="text-2xl font-bold text-center mb-10 text-blue-300">Our Coordinators</h3>
             
-            <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+            <div className="grid grid-cols-2 sm:grid-cols-5 gap-6 max-w-5xl mx-auto">
               {coordinators.map((coordinator, index) => (
                 <ParallaxEffect key={index} speed={0.02} direction="scale">
                   <GlassCard 
@@ -299,28 +307,26 @@ export default function TeamSection() {
                     {/* Enhanced coordinator avatar */}
                     <MemberAvatar member={coordinator} index={index + team.length} size="medium" />
                     
-                    <span className="text-gray-300 text-sm font-medium mb-3 group-hover:text-white transition-colors duration-200">
+                    <span className="text-gray-300 text-sm font-medium mb-0 group-hover:text-white transition-colors duration-200">
                       {coordinator.name}
                     </span>
                     
-                    {/* LinkedIn button - enabled/disabled based on availability */}
+                    {/* LinkedIn button - commented out until URLs are collected
                     <div className="flex justify-center">
                       {coordinator.linkedin ? (
-                        <a 
-                          href={coordinator.linkedin} 
-                          target="_blank" 
+                        <a
+                          href={coordinator.linkedin}
+                          target="_blank"
                           rel="noopener noreferrer"
-                          className="group p-2 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 rounded-full text-white transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/50 border border-blue-400/20"
+                          className="flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 rounded-full text-white text-xs font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/50 border border-blue-400/30"
                           aria-label={`${coordinator.name}'s LinkedIn profile`}
                         >
-                          <Linkedin className="h-4 w-4 group-hover:scale-110 transition-transform duration-200" />
+                          <Linkedin className="h-3.5 w-3.5 shrink-0" />
+                          <span>LinkedIn</span>
                         </a>
-                      ) : (
-                        <div className="p-2 bg-gray-600 bg-opacity-30 rounded-full text-gray-500 cursor-not-allowed opacity-50">
-                          <Linkedin className="h-4 w-4" />
-                        </div>
-                      )}
+                      ) : null}
                     </div>
+                    */}
                   </GlassCard>
                 </ParallaxEffect>
               ))}
